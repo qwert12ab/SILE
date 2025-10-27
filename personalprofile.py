@@ -62,11 +62,14 @@ with c2:
         st.write('职位:',work)
         st.write('电话:',phonenumber)
         st.write('邮箱:',email)
-        st.write('技能:',skill)
+        s=''
+        for yuyan in skill:
+            s=s+ yuyan
+        st.write(f'技能:{s}')
     with a2:
         st.write("出生日期:", date)
         st.write(f'性别:{gender}')
-        st.write(f'语言能力:{language}')
+        st.write('语言能力',language)
         st.write(f'你的学历是:{degree}')
         st.write('工作经验:',age,'年')
         st.write("你选择时间1是:", w1)
